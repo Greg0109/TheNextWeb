@@ -1,524 +1,785 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Next Web</title>
-</head>
-<body>
-  <!-- header section -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>The Next Web</title>
+  </head>
+  <body>
+    <!-- header section -->
 
-  <header>
-    <nav>
-      <ul class="left-nav">
-        <li>
-          <a href=""></a>
-        </li>
-      </ul>
-      <ul class="right-nav">
-        <li><a href=""></a> </li>
-        <li><a href=""></a> </li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- main section -->
-  <main>
-<div class="main-articles">
-  <ul>
-    <li>
-      <p class="source">INSIGHTS</p>
-      <p class="main-title">Gas emitted by merging galaxies is stopping stars from forming</p>
-      <p class="author">by <span>The Conversation</span></p>
-      <p class="time">
-        <a href="">1 hour ago</a>
-      </p>
-      <p class="share-icon">
-        <a href="">0</a>
-      </p>
-    </li>
-
-    <li>
-      <p class="source">GEAR</p>
-      <p class="main-title">How to manage your screen time during the lockdown, according to science</p>
-      <p class="author">by <span>The Conversation</span></p>
-      <p class="time">
-        <a href="">8 hours ago</a>
-      </p>
-      <p class="share-icon">
-        <a href="">23</a>
-      </p>
-    </li>
-
-    <li>
-      <p class="source">GEAR</p>
-      <p class="main-title">How sleep trackers can actually ruin your sleep</p>
-      <p class="author">by <span>The Conversation</span></p>
-      <p class="time">
-        <a href="">10 hours ago</a>
-      </p>
-      <p class="share-icon">
-        <a href="">23</a>
-      </p>
-    </li>
-  </ul>
-</div>
-<!-- Latest news -->
-
-<div class="latest-news">
-  <ul>
-    <li>
-      <img src="" alt="">
-      <p class="latest-title">Azure is one of the largest market leaders, learn cloud computing with this $39 training</p>
-      <p class="latest-author">TNW Deals</p>
-      <p class="latest-time">36 minutes ago</p>
-    </li>
-    <li>
-      <img src="" alt="">
-      <p class="latest-title">DIY music production software like Logic Pro X is now the mainstream. Here's what you need to know</p>
-      <p class="latest-author">TNW Deals</p>
-      <p class="latest-time">1 day ago</p>
-    </li>
-    <li>
-      <img src="" alt="">
-      <p class="latest-title">Forget coding, you can now solve your AI problems with Excel</p>
-      <p class="latest-author">Ben Dickson</p>
-      <p class="latest-time">1 day ago</p>
-    </li>
-    <li>
-      <img src="" alt="">
-      <p class="latest-title">WhatsApp delays it privacy plicy update by three months - but what's the point?</p>
-      <p class="latest-author">Ivan Mehta</p>
-      <p class="latest-time">1 day ago</p>
-    </li>
-    <li>
-      <img src="" alt="">
-      <p class="latest-title">Report: Apple is building foldable iPhone prototypes</p>
-      <p class="latest-author">Napier Lopez</p>
-      <p class="latest-time">1 day ago</p>
-    </li>
-    <li>
-      <img src="" alt="">
-      <p class="latest-title">Scientists figured out how to turn black holes into power sources</p>
-      <p class="latest-author">Tristan Greene</p>
-      <p class="latest-time">1 day ago</p>
-    </li>
-    <li>
-      <img src="" alt="">
-      <p class="latest-title">New self-supervised AI models scan X-rays to predict prognosis of COVID-19 patients</p>
-      <p class="latest-author">Thomas Macaulay</p>
-      <p class="latest-time">2 days ago</p>
-    </li>
-    <li>
-      <img src="" alt="">
-      <p class="latest-title">Electric vehicles can now use bus lanes in the UK - and cyclists aren't happy</p>
-      <p class="latest-author">Matthew Beedham</p>
-      <p class="latest-time">2 days ago</p>
-    </li>
-  </ul>
-</div>
-<div class="latest-funding">
-  <p id="latest-funding-title">Latest funding rounds on Index.co ></p>
-  <div class="extrainfo">
-    <ul>
-      <li>See more</li>
-      <li>Get updates by email</li>
-      <li>Add info</li>
-    </ul>
-  </div>
-  <div class="latest-items">
-    <ul>
-      <li>
-        <p class="latest-item-title">BharatPe</p>
-        <img src="" alt="">
-        <div class="latest-item-price">
-          <p>₹2B</p>
-          <p>Debt financing</p>
+    <header>
+      <nav>
+        <div class="left-nav">
+          <img id="navlogo" src="assets/tnw.svg" alt="" class="logonavbar" />
+          <a href="#"></a>
         </div>
-        <div class="latest-item-info">
+        <ul class="right-nav">
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- main section -->
+    <main>
+      <div class="main-articles">
+        <ul>
+          <li id="source1">
+            <p class="source">INSIGHTS</p>
+            <p class="main-title">
+              Gas emitted by merging galaxies is stopping stars from forming
+            </p>
+            <div class="main-bottom">
+              <p class="author">by <span>The Conversation</span></p>
+              <p class="time">
+                <a href="#">1 hour ago</a>
+              </p>
+              <p class="share-icon">
+                <a href="#">0</a>
+              </p>
+            </div>
+          </li>
+
+          <li id="source2">
+            <p class="source">GEAR</p>
+            <p class="main-title">
+              How to manage your screen time during the lockdown, according to
+              science
+            </p>
+            <div class="main-bottom">
+              <p class="author">by <span>The Conversation</span></p>
+              <p class="time">
+                <a href="#">8 hours ago</a>
+              </p>
+              <p class="share-icon">
+                <a href="#">23</a>
+              </p>
+            </div>
+          </li>
+
+          <li id="source3">
+            <p class="source">GEAR</p>
+            <p class="main-title">
+              How sleep trackers can actually ruin your sleep
+            </p>
+            <div class="main-bottom">
+              <p class="author">by <span>The Conversation</span></p>
+              <p class="time">
+                <a href="#">10 hours ago</a>
+              </p>
+              <p class="share-icon">
+                <a href="#">23</a>
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- Latest news -->
+
+      <div class="latest-news">
+        <ul>
+          <li>
+            <img src="assets/azure.jpg" alt="Error loading the image" />
+            <p class="latest-title">
+              Azure is one of the largest market leaders, learn cloud computing
+              with this $39 training
+            </p>
+            <p class="latest-author">TNW Deals</p>
+            <p class="latest-time">36 minutes ago</p>
+          </li>
+          <li>
+            <img src="assets/diymusic.jpeg" alt="Error loading the image" />
+            <p class="latest-title">
+              DIY music production software like Logic Pro X is now the
+              mainstream. Here's what you need to know
+            </p>
+            <p class="latest-author">TNW Deals</p>
+            <p class="latest-time">1 day ago</p>
+          </li>
+          <li>
+            <img
+              src="assets/forgetcodingrectangle.jpg"
+              alt="Error loading the image"
+            />
+            <p class="latest-title">
+              Forget coding, you can now solve your AI problems with Excel
+            </p>
+            <p class="latest-author">Ben Dickson</p>
+            <p class="latest-time">1 day ago</p>
+          </li>
+          <li>
+            <img src="assets/whatsapp.jpg" alt="Error loading the image" />
+            <p class="latest-title">
+              WhatsApp delays it privacy plicy update by three months - but
+              what's the point?
+            </p>
+            <p class="latest-author">Ivan Mehta</p>
+            <p class="latest-time">1 day ago</p>
+          </li>
+          <li>
+            <img src="assets/foldable.jpg" alt="Error loading the image" />
+            <p class="latest-title">
+              Report: Apple is building foldable iPhone prototypes
+            </p>
+            <p class="latest-author">Napier Lopez</p>
+            <p class="latest-time">1 day ago</p>
+          </li>
+          <li>
+            <img
+              src="assets/blackholesquare.jpg"
+              alt="Error loading the image"
+            />
+            <p class="latest-title">
+              Scientists figured out how to turn black holes into power sources
+            </p>
+            <p class="latest-author">Tristan Greene</p>
+            <p class="latest-time">1 day ago</p>
+          </li>
+          <li>
+            <img src="assets/xray.png" alt="Error loading the image" />
+            <p class="latest-title">
+              New self-supervised AI models scan X-rays to predict prognosis of
+              COVID-19 patients
+            </p>
+            <p class="latest-author">Thomas Macaulay</p>
+            <p class="latest-time">2 days ago</p>
+          </li>
+          <li>
+            <img
+              src="assets/electricvehicles.jpg"
+              alt="Error loading the image"
+            />
+            <p class="latest-title">
+              Electric vehicles can now use bus lanes in the UK - and cyclists
+              aren't happy
+            </p>
+            <p class="latest-author">Matthew Beedham</p>
+            <p class="latest-time">2 days ago</p>
+          </li>
+        </ul>
+      </div>
+      <div class="latest-funding">
+        <p id="latest-funding-title">Latest funding rounds on Index.co &gt;</p>
+        <div class="extrainfo">
+          <ul>
+            <li>See more</li>
+            <li>Get updates by email</li>
+            <li>Add info</li>
+          </ul>
+        </div>
+        <div class="latest-items">
           <ul>
             <li>
-              <img src="" alt="">
-              <p>Payments, +3</p>
+              <p class="latest-item-title">BharatPe</p>
+              <img src="assets/bharatpe.png" alt="Error loading the image" />
+              <div class="latest-item-price">
+                <p>₹2B</p>
+                <p>Debt financing</p>
+              </div>
+              <div class="latest-item-info">
+                <ul>
+                  <li>
+                    <img src="" alt="Error loading the image" />
+                    <p>Payments, +3</p>
+                  </li>
+                  <li>
+                    <img src="" alt="Error loading the image" />
+                    <p>ICICI Bank, +2</p>
+                  </li>
+                  <li><hr /></li>
+                  <li>
+                    <p>
+                      Exclusive: BharatPe raises Rs 200 Cr debt from ICICI,
+                      Alteria and Innoven
+                    </p>
+                  </li>
+                  <li>
+                    <p class="latest-item-source">on Entrackr</p>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li>
-              <img src="" alt="">
-              <p>ICICI Bank, +2</p>
+              <p class="latest-item-title">Oqton</p>
+              <img src="assets/oqton.jpeg" alt="Error loading the image" />
+              <div class="latest-item-price">
+                <p>$40M</p>
+                <p>Series A</p>
+              </div>
+              <div class="latest-item-info">
+                <ul>
+                  <li>
+                    <img src="" alt="Error loading the image" />
+                    <p>Technology, +3</p>
+                  </li>
+                  <li>
+                    <img src="" alt="Error loading the image" />
+                    <p>PMV, +7</p>
+                  </li>
+                  <li><hr /></li>
+                  <li>
+                    <p>
+                      Oqton raises $40 million to apply AI to additive
+                      manufacturing
+                    </p>
+                  </li>
+                  <li>
+                    <p class="latest-item-source">on VentureBeat</p>
+                  </li>
+                </ul>
+              </div>
             </li>
-            <li><hr></li>
             <li>
-              <p>Exclusive: BharatPe raises Rs 200 Cr debt from ICICI, Alteria and Innoven</p>
-            </li>
-            <li>
-              <p class="latest-item-source">on Entrackr</p>
+              <p class="latest-item-title">Swimm</p>
+              <img src="assets/swimm.png" alt="Error loading the image" />
+              <div class="latest-item-price">
+                <p>$5.7M</p>
+                <p>SEED FUND</p>
+              </div>
+              <div class="latest-item-info">
+                <ul>
+                  <li>
+                    <img src="" alt="Error loading the image" />
+                    <p>Information Technology, +2</p>
+                  </li>
+                  <li>
+                    <img src="" alt="Error loading the image" />
+                    <p>Pitango Venture Capital</p>
+                  </li>
+                  <li><hr /></li>
+                  <li>
+                    <p>
+                      Swimm raises $5.7M in seed funding round and launches its
+                      unique code-sharing platform
+                    </p>
+                  </li>
+                  <li>
+                    <p class="latest-item-source">on SiliconANGLE</p>
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
-      </li>
-      <li>
-        <p class="latest-item-title">Oqton</p>
-        <img src="" alt="">
-        <div class="latest-item-price">
-          <p>$40M</p>
-          <p>Series A</p>
-        </div>
-        <div class="latest-item-info">
-          <ul>
-            <li>
-              <img src="" alt="">
-              <p>Technology, +3</p>
-            </li>
-            <li>
-              <img src="" alt="">
-              <p>PMV, +7</p>
-            </li>
-            <li><hr></li>
-            <li>
-              <p>Oqton raises $40 million to apply AI to additive manufacturing</p>
-            </li>
-            <li>
-              <p class="latest-item-source">on VentureBeat</p>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li>
-        <p class="latest-item-title">Swimm</p>
-        <img src="" alt="">
-        <div class="latest-item-price">
-          <p>$5.7M</p>
-          <p>SEED FUND</p>
-        </div>
-        <div class="latest-item-info">
-          <ul>
-            <li>
-              <img src="" alt="">
-              <p>Information Technology, +2</p>
-            </li>
-            <li>
-              <img src="" alt="">
-              <p>Pitango Venture Capital</p>
-            </li>
-            <li><hr></li>
-            <li>
-              <p>Swimm raises $5.7M in seed funding round and launches its unique code-sharing platform</p>
-            </li>
-            <li>
-              <p class="latest-item-source">on SiliconANGLE</p>
-            </li>
-          </ul>
-        </div>
-      </li>
-    </ul>
-  </div>  
-</div>
+      </div>
 
-<div id="categories-grid">
-  <ul>
-    <li>
-      <div class="category-item">
-        <p class="category-item-title">Hard Fork ></p>
-        <div class="category-item-mostpopular">
-          <p class="category-item-mostpopular-category">Most Popular</p>
-          <p class="category-item-mostpopular-title">Twitter shares fall 7% in pre-market trading after Trump's removal</p>
-          <p class="category-item-mostpopular-author">Ivan Mehta</p>
-          <p class="category-item-mostpopular-time">6 days ago</p>
-        </div>
-        <div class="category-item-latest">
-          <p class="category-item-latest-category">LATEST</p>
-          <p class="category-item-latest-title">Winklevoss comes out of meditation to witness Bitcoin's record high</p>
-          <img src="" alt="" class="category-item-latest-image">
-        </div>
-        <ul class="category-item-list">
-          <li>CD Projekt Rekt: Cyberpunk 2077 tanks studio's share price nearly 50%</li>
-          <li>CD Projekt stock down 20% since Cyberpunk reviews hit the internet</li>
-          <li>Airbnb to be bigger than eBay after its long-awaited IPO</li>
-          <li>Tesla just set a new record high. Now it wants to dump $5B in stock</li>
-          <li>Meanwhile, esports and gaming stocks are pumping to record highs</li>
-        </ul>
-      </div>
-    </li>
-    <li>
-      <div class="category-item">
-        <p class="category-item-title">Apps ></p>
-        <div class="category-item-mostpopular">
-          <p class="category-item-mostpopular-category">Most Popular</p>
-          <p class="category-item-mostpopular-title">Android Auto is reading notifications in the wrong lenguage - and Google's solution is terrible</p>
-          <p class="category-item-mostpopular-author">Matthew Beedham</p>
-          <p class="category-item-mostpopular-time">3 days ago</p>
-        </div>
-        <div class="category-item-latest">
-          <p class="category-item-latest-category">LATEST</p>
-          <p class="category-item-latest-title">Jack Dorsey: "I do not celebrate" Trumps's twitter ban</p>
-          <img src="" alt="" class="category-item-latest-image">
-        </div>
-        <ul class="category-item-list">
-          <li>Oh, great - Uber and Lyft are actually increasing car ownershitp in US cities</li>
-          <li>Donald Trump has been permanently banned from Twitter</li>
-          <li>All I want for Christmas is a length-based search option in Netflix</li>
-          <li>Can Apple's rumored search engine ever compete with Google?</li>
-          <li>Google's Android Auto finally has a third-party app for navigation</li>
-        </ul>
-      </div>
-    </li>
-    <li>
-      <div class="category-item">
-        <p class="category-item-title">Gear ></p>
-        <div class="category-item-mostpopular">
-          <p class="category-item-mostpopular-category">Most Popular</p>
-          <p class="category-item-mostpopular-title">How to manage your screen time during the lockdown, according to science</p>
-          <p class="category-item-mostpopular-author">The conversation</p>
-          <p class="category-item-mostpopular-time">21 hours ago</p>
-        </div>
-        <div class="category-item-latest">
-          <p class="category-item-latest-category">LATEST</p>
-          <p class="category-item-latest-title">How sleep trackers can actually ruin your sleep</p>
-          <img src="" alt="" class="category-item-latest-image">
-        </div>
-        <ul class="category-item-list">
-          <li>Report: Apple is building foldable iPhone prototypes</li>
-          <li>The Galaxy Buds Pro are Samsung's answer to AirPods Pro</li>
-          <li>Samsung reveals the Galaxy S21 series, $200 cheaper this time</li>
-          <li>HTC is apparently still making phones, announces the Desire 21 Pro 5G</li>
-          <li>LG confirms its shape-shifting "rollable" phone arrives this year</li>
-        </ul>
-      </div>
-    </li>
-    <li>
-      <div class="category-item">
-        <p class="category-item-title">Tech ></p>
-        <div class="category-item-mostpopular">
-          <p class="category-item-mostpopular-category">Most Popular</p>
-          <p class="category-item-mostpopular-title">Forget coding, you can now solve your AI problems with Excel</p>
-          <p class="category-item-mostpopular-author">Ben Dickson</p>
-          <p class="category-item-mostpopular-time">1 day ago</p>
-        </div>
-        <div class="category-item-latest">
-          <p class="category-item-latest-category">LATEST</p>
-          <p class="category-item-latest-title">Scientists figure out how to turn black holes into power sources</p>
-          <img src="" alt="" class="category-item-latest-image">
-        </div>
-        <ul class="category-item-list">
-          <li>How to manipulate date and time in JavaScript</li>
-          <li>Standford team behind BS gaydar AI says facial recognition can expose political orientation</li>
-          <li>Tesla can't be forced to recall 158,000 cars in the US... yet</li>
-          <li>How to develop a web app with SEO in less than 10 minutes</li>
-          <li>How 'last-mile' services and shared mobility can streamline the delivery business</li>
-        </ul>
-      </div>
-    </li>
-    <li>
-      <div class="category-item">
-        <p class="category-item-title">Creative ></p>
-        <div class="category-item-mostpopular">
-          <p class="category-item-mostpopular-category">Most Popular</p>
-          <p class="category-item-mostpopular-title">How global crisis affects design</p>
-          <p class="category-item-mostpopular-author">Rebecca Bellan</p>
-          <p class="category-item-mostpopular-time">20 days ago</p>
-        </div>
-        <div class="category-item-latest">
-          <p class="category-item-latest-category">LATEST</p>
-          <p class="category-item-latest-title">Graphic design apps are now as fundamental as Excel - here's how non-designers get up to speed</p>
-          <img src="" alt="" class="category-item-latest-image">
-        </div>
-        <ul class="category-item-list">
-          <li>This real-world multiplayer game lets you spend other people's money - really</li>
-          <li>Warzone is infinitely more fun without vehicles (even though it's just a bug)</li>
-          <li>The Winamp Skin Museum is a beautiful homepage to an iconic piece of software</li>
-          <li>Why skin tone modifiers don't work for 🤝, explained by an emoji historian</li>
-          <li>Why you need Design Thinking and Proofs of Concept to level up your business</li>
-        </ul>
-      </div>
-    </li>
-    <li>
-      <div class="category-item">
-        <p class="category-item-title">Podium ></p>
-        <div class="category-item-mostpopular">
-          <p class="category-item-mostpopular-category">Most Popular</p>
-          <p class="category-item-mostpopular-title">2021 will be the year open source projects overcome their diversity problems</p>
-          <p class="category-item-mostpopular-author">Christopher Ferris</p>
-          <p class="category-item-mostpopular-time">20 days ago</p>
-        </div>
-        <div class="category-item-latest">
-          <p class="category-item-latest-category">LATEST</p>
-          <p class="category-item-latest-title">Google still abuses its search monopoly in the EU - regulators wake up!</p>
-          <img src="" alt="" class="category-item-latest-image">
-        </div>
-        <ul class="category-item-list">
-          <li>Mixed reality is perfect for our innate multitasking habits</li>
-          <li>6 big data blunders business should avoid</li>
-          <li>The AI landscape is shifting from 'data' to 'knowledge'. Here's why it matters</li>
-          <li>Disruptive fintech is our best bet to economic recovery post COVID-19</li>
-          <li>Tech in Latin America: An entrepeneur's guide to June's startup news</li>
-        </ul>
-      </div>
-    </li>
-    <li>
-      <div class="category-item">
-        <p class="category-item-title">Insights ></p>
-        <div class="category-item-mostpopular">
-          <p class="category-item-mostpopular-category">Most Popular</p>
-          <p class="category-item-mostpopular-title">Gas emitted by merging galaxies is stopping stars from forming</p>
-          <p class="category-item-mostpopular-author">The Converstion</p>
-          <p class="category-item-mostpopular-time">14 hours ago</p>
-        </div>
-        <div class="category-item-latest">
-          <p class="category-item-latest-category">LATEST</p>
-          <p class="category-item-latest-title">Electric vehicles can now use bus lanes in the UK - and cyclits aren't happy</p>
-          <img src="" alt="" class="category-item-latest-image">
-        </div>
-        <ul class="category-item-list">
-          <li>Week-by-week breakdown of my $15M virtual fundraising journey in 2020
+      <div id="categories-grid">
+        <ul>
+          <li>
+            <div class="category-item">
+              <p class="category-item-title">Hard Fork &gt;</p>
+              <div class="category-item-mostpopular">
+                <p class="category-item-mostpopular-category">Most Popular</p>
+                <p class="category-item-mostpopular-title">
+                  Twitter shares fall 7% in pre-market trading after Trump's
+                  removal
+                </p>
+                <p class="category-item-mostpopular-author">Ivan Mehta</p>
+                <p class="category-item-mostpopular-time">6 days ago</p>
+              </div>
+              <div class="category-item-latest">
+                <p class="category-item-latest-category">LATEST</p>
+                <p class="category-item-latest-title">
+                  Winklevoss comes out of meditation to witness Bitcoin's record
+                  high
+                </p>
+                <img
+                  src="assets/hardforklatest.jpg"
+                  alt="Error loading the image"
+                  class="category-item-latest-image"
+                />
+              </div>
+              <ul class="category-item-list">
+                <li>
+                  CD Projekt Rekt: Cyberpunk 2077 tanks studio's share price
+                  nearly 50%
+                </li>
+                <li>
+                  CD Projekt stock down 20% since Cyberpunk reviews hit the
+                  internet
+                </li>
+                <li>
+                  Airbnb to be bigger than eBay after its long-awaited IPO
+                </li>
+                <li>
+                  Tesla just set a new record high. Now it wants to dump $5B in
+                  stock
+                </li>
+                <li>
+                  Meanwhile, esports and gaming stocks are pumping to record
+                  highs
+                </li>
+              </ul>
+            </div>
           </li>
-          <li>What this simple TikTok prank taught me about work
+          <li>
+            <div class="category-item">
+              <p class="category-item-title">Apps &gt;</p>
+              <div class="category-item-mostpopular">
+                <p class="category-item-mostpopular-category">Most Popular</p>
+                <p class="category-item-mostpopular-title">
+                  Android Auto is reading notifications in the wrong lenguage -
+                  and Google's solution is terrible
+                </p>
+                <p class="category-item-mostpopular-author">Matthew Beedham</p>
+                <p class="category-item-mostpopular-time">3 days ago</p>
+              </div>
+              <div class="category-item-latest">
+                <p class="category-item-latest-category">LATEST</p>
+                <p class="category-item-latest-title">
+                  Jack Dorsey: "I do not celebrate" Trumps's twitter ban
+                </p>
+                <img
+                  src="assets/appslatest.jpg"
+                  alt="Error loading the image"
+                  class="category-item-latest-image"
+                />
+              </div>
+              <ul class="category-item-list">
+                <li>
+                  Oh, great - Uber and Lyft are actually increasing car
+                  ownershitp in US cities
+                </li>
+                <li>Donald Trump has been permanently banned from Twitter</li>
+                <li>
+                  All I want for Christmas is a length-based search option in
+                  Netflix
+                </li>
+                <li>
+                  Can Apple's rumored search engine ever compete with Google?
+                </li>
+                <li>
+                  Google's Android Auto finally has a third-party app for
+                  navigation
+                </li>
+              </ul>
+            </div>
           </li>
-          <li>5 ways to accomplish nothing and still feel exhausted
+          <li>
+            <div class="category-item">
+              <p class="category-item-title">Gear &gt;</p>
+              <div class="category-item-mostpopular">
+                <p class="category-item-mostpopular-category">Most Popular</p>
+                <p class="category-item-mostpopular-title">
+                  How to manage your screen time during the lockdown, according
+                  to science
+                </p>
+                <p class="category-item-mostpopular-author">The conversation</p>
+                <p class="category-item-mostpopular-time">21 hours ago</p>
+              </div>
+              <div class="category-item-latest">
+                <p class="category-item-latest-category">LATEST</p>
+                <p class="category-item-latest-title">
+                  How sleep trackers can actually ruin your sleep
+                </p>
+                <img
+                  src="assets/gearlatest.png"
+                  alt="Error loading the image"
+                  class="category-item-latest-image"
+                />
+              </div>
+              <ul class="category-item-list">
+                <li>Report: Apple is building foldable iPhone prototypes</li>
+                <li>The Galaxy Buds Pro are Samsung's answer to AirPods Pro</li>
+                <li>
+                  Samsung reveals the Galaxy S21 series, $200 cheaper this time
+                </li>
+                <li>
+                  HTC is apparently still making phones, announces the Desire 21
+                  Pro 5G
+                </li>
+                <li>
+                  LG confirms its shape-shifting "rollable" phone arrives this
+                  year
+                </li>
+              </ul>
+            </div>
           </li>
-          <li>How PR people should (not) pitch AI projects
+          <li>
+            <div class="category-item">
+              <p class="category-item-title">Tech &gt;</p>
+              <div class="category-item-mostpopular">
+                <p class="category-item-mostpopular-category">Most Popular</p>
+                <p class="category-item-mostpopular-title">
+                  Forget coding, you can now solve your AI problems with Excel
+                </p>
+                <p class="category-item-mostpopular-author">Ben Dickson</p>
+                <p class="category-item-mostpopular-time">1 day ago</p>
+              </div>
+              <div class="category-item-latest">
+                <p class="category-item-latest-category">LATEST</p>
+                <p class="category-item-latest-title">
+                  Scientists figure out how to turn black holes into power
+                  sources
+                </p>
+                <img
+                  src="assets/techlastests.jpg"
+                  alt="Error loading the image"
+                  class="category-item-latest-image"
+                />
+              </div>
+              <ul class="category-item-list">
+                <li>How to manipulate date and time in JavaScript</li>
+                <li>
+                  Standford team behind BS gaydar AI says facial recognition can
+                  expose political orientation
+                </li>
+                <li>
+                  Tesla can't be forced to recall 158,000 cars in the US... yet
+                </li>
+                <li>
+                  How to develop a web app with SEO in less than 10 minutes
+                </li>
+                <li>
+                  How 'last-mile' services and shared mobility can streamline
+                  the delivery business
+                </li>
+              </ul>
+            </div>
           </li>
-          <li>Why no-code tools in startups should remain niche
+          <li>
+            <div class="category-item">
+              <p class="category-item-title">Creative &gt;</p>
+              <div class="category-item-mostpopular">
+                <p class="category-item-mostpopular-category">Most Popular</p>
+                <p class="category-item-mostpopular-title">
+                  How global crisis affects design
+                </p>
+                <p class="category-item-mostpopular-author">Rebecca Bellan</p>
+                <p class="category-item-mostpopular-time">20 days ago</p>
+              </div>
+              <div class="category-item-latest">
+                <p class="category-item-latest-category">LATEST</p>
+                <p class="category-item-latest-title">
+                  Graphic design apps are now as fundamental as Excel - here's
+                  how non-designers get up to speed
+                </p>
+                <img
+                  src="assets/creativelatest.jpg"
+                  alt="Error loading the image"
+                  class="category-item-latest-image"
+                />
+              </div>
+              <ul class="category-item-list">
+                <li>
+                  This real-world multiplayer game lets you spend other people's
+                  money - really
+                </li>
+                <li>
+                  Warzone is infinitely more fun without vehicles (even though
+                  it's just a bug)
+                </li>
+                <li>
+                  The Winamp Skin Museum is a beautiful homepage to an iconic
+                  piece of software
+                </li>
+                <li>
+                  Why skin tone modifiers don't work for 🤝, explained by an
+                  emoji historian
+                </li>
+                <li>
+                  Why you need Design Thinking and Proofs of Concept to level up
+                  your business
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="category-item">
+              <p class="category-item-title">Podium &gt;</p>
+              <div class="category-item-mostpopular">
+                <p class="category-item-mostpopular-category">Most Popular</p>
+                <p class="category-item-mostpopular-title">
+                  2021 will be the year open source projects overcome their
+                  diversity problems
+                </p>
+                <p class="category-item-mostpopular-author">
+                  Christopher Ferris
+                </p>
+                <p class="category-item-mostpopular-time">20 days ago</p>
+              </div>
+              <div class="category-item-latest">
+                <p class="category-item-latest-category">LATEST</p>
+                <p class="category-item-latest-title">
+                  Google still abuses its search monopoly in the EU - regulators
+                  wake up!
+                </p>
+                <img
+                  src="assets/podiumlatest.png"
+                  alt="Error loading the image"
+                  class="category-item-latest-image"
+                />
+              </div>
+              <ul class="category-item-list">
+                <li>
+                  Mixed reality is perfect for our innate multitasking habits
+                </li>
+                <li>6 big data blunders business should avoid</li>
+                <li>
+                  The AI landscape is shifting from 'data' to 'knowledge'.
+                  Here's why it matters
+                </li>
+                <li>
+                  Disruptive fintech is our best bet to economic recovery post
+                  COVID-19
+                </li>
+                <li>
+                  Tech in Latin America: An entrepeneur's guide to June's
+                  startup news
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="category-item">
+              <p class="category-item-title">Insights &gt;</p>
+              <div class="category-item-mostpopular">
+                <p class="category-item-mostpopular-category">Most Popular</p>
+                <p class="category-item-mostpopular-title">
+                  Gas emitted by merging galaxies is stopping stars from forming
+                </p>
+                <p class="category-item-mostpopular-author">The Converstion</p>
+                <p class="category-item-mostpopular-time">14 hours ago</p>
+              </div>
+              <div class="category-item-latest">
+                <p class="category-item-latest-category">LATEST</p>
+                <p class="category-item-latest-title">
+                  Electric vehicles can now use bus lanes in the UK - and
+                  cyclits aren't happy
+                </p>
+                <img
+                  src="assets/electricvehicles.jpg"
+                  alt="Error loading the image"
+                  class="category-item-latest-image"
+                />
+              </div>
+              <ul class="category-item-list">
+                <li>
+                  Week-by-week breakdown of my $15M virtual fundraising journey
+                  in 2020
+                </li>
+                <li>What this simple TikTok prank taught me about work</li>
+                <li>5 ways to accomplish nothing and still feel exhausted</li>
+                <li>How PR people should (not) pitch AI projects</li>
+                <li>Why no-code tools in startups should remain niche</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="category-item">
+              <p class="category-item-title">Launch &gt;</p>
+              <div class="category-item-mostpopular">
+                <p class="category-item-mostpopular-category">Most Popular</p>
+                <p class="category-item-mostpopular-title">
+                  About time! Toyota finally announces an all-electric vehicle
+                </p>
+                <p class="category-item-mostpopular-author">Matthew Beedham</p>
+                <p class="category-item-mostpopular-time">5 weeks ago</p>
+              </div>
+              <div class="category-item-latest">
+                <p class="category-item-latest-category">LATEST</p>
+                <p class="category-item-latest-title">
+                  I've fallen for the electric Hummer and I hate myself for it
+                </p>
+                <img
+                  src="assets/launchlatest.jpg"
+                  alt="Error loading the image"
+                  class="category-item-latest-image"
+                />
+              </div>
+              <ul class="category-item-list">
+                <li>
+                  Amazon's electric delivery vans made by Rivian are here, and
+                  they're pretty cute
+                </li>
+                <li>This adorable little electric car is made of trash</li>
+                <li>
+                  Hyundai's first fuel cell-powered trucks arrive in Switzerland
+                  - bye bye, diesel
+                </li>
+                <li>
+                  Lynk & Co.'s car sharing-owning scheme will never cost more
+                  than €500 a month
+                </li>
+                <li>
+                  Lucid unveils the Air, its luxury EV with up to 517-miles of
+                  range costing as much as $169K
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="category-item">
+              <p class="category-item-title">Distract &gt;</p>
+              <div class="category-item-mostpopular">
+                <p class="category-item-mostpopular-category">Most Popular</p>
+                <p class="category-item-mostpopular-title">
+                  Games to play on date night: Rule the galaxy together in
+                  Stellaris
+                </p>
+                <p class="category-item-mostpopular-author">Tristn Greene</p>
+                <p class="category-item-mostpopular-time">4 weeks ago</p>
+              </div>
+              <div class="category-item-latest">
+                <p class="category-item-latest-category">LATEST</p>
+                <p class="category-item-latest-title">
+                  We need to make remote meetings more boring in 2021
+                </p>
+                <img
+                  src="assets/distractlatest.png"
+                  alt="Error loading the image"
+                  class="category-item-latest-image"
+                />
+              </div>
+              <ul class="category-item-list">
+                <li>The podcasts that got us through 2020</li>
+                <li>
+                  How Netflix shapes mainstream culture, explained by data
+                </li>
+                <li>
+                  Christmas is better with Tom Vasel's YouTube board game
+                  reviews
+                </li>
+                <li>
+                  How to start playing tabletop RPGs like D&D and Cyberpunk 2020
+                </li>
+                <li>
+                  Watching people pretend to be vampires is what got me through
+                  2020
+                </li>
+              </ul>
+            </div>
           </li>
         </ul>
       </div>
-    </li>
-    <li><div class="category-item">
-      <p class="category-item-title">Launch ></p>
-      <div class="category-item-mostpopular">
-        <p class="category-item-mostpopular-category">Most Popular</p>
-        <p class="category-item-mostpopular-title">About time! Toyota finally announces an all-electric vehicle</p>
-        <p class="category-item-mostpopular-author">Matthew Beedham</p>
-        <p class="category-item-mostpopular-time">5 weeks ago</p>
+
+      <!--Latest deals -->
+      <div class="latest-news">
+        <ul>
+          <li>
+            <img
+              src="assets/datascientistmegabundle.jpg"
+              alt="Error loading the image"
+            />
+            <p class="latest-title">
+              The 2021 All-in-One Data Scientist Mega Bundle
+            </p>
+            <p class="latest-old-deals">$6000</p>
+            <p class="latest-deals">$39.99</p>
+          </li>
+          <li>
+            <img
+              src="assets/whitehathacker.jpg"
+              alt="Error loading the image"
+            />
+            <p class="latest-title">
+              The Ultimate 2021 White Hat Hacker Certification Bundle
+            </p>
+            <p class="latest-old-deals">$1345</p>
+            <p class="latest-deals">$39.90</p>
+          </li>
+          <li>
+            <img
+              src="assets/logitecmusicpro.jpg"
+              alt="Error loading the image"
+            />
+            <p class="latest-title">
+              The Ultimate Logic Pro X Music Production Bundle
+            </p>
+            <p class="latest-old-deals">$690</p>
+            <p class="latest-deals">$29</p>
+          </li>
+          <li>
+            <img
+              src="assets/completemasterphotography.jpg"
+              alt="Error loading the image"
+            />
+            <p class="latest-title">
+              The 2021 Complte Learn Master Photography & Editing Bundle
+            </p>
+            <p class="latest-old-deals">$2985</p>
+            <p class="latest-deals">$39.99</p>
+          </li>
+          <li>
+            <img
+              src="assets/premiumcertificationbundle.jpg"
+              alt="Error loading the image"
+            />
+            <p class="latest-title">
+              The Premium 2021 Project & Quality Management Certification Bundle
+            </p>
+            <p class="latest-old-deals">$4400</p>
+            <p class="latest-deals">$45.99</p>
+          </li>
+          <li>
+            <img src="assets/1tbpremium.jpg" alt="Error loading the image" />
+            <p class="latest-title">
+              Starchive 1TB Cloud Storage: Lifetime Subscription
+            </p>
+            <p class="latest-old-deals">$1530</p>
+            <p class="latest-deals">$96.99</p>
+          </li>
+          <li>
+            <img src="assets/fastestvpng.jpg" alt="Error loading the image" />
+            <p class="latest-title">
+              FastestVPN: Lifetime Subscription (10 Devices)
+            </p>
+            <p class="latest-old-deals">$1200</p>
+            <p class="latest-deals">$24.99</p>
+          </li>
+          <li>
+            <img
+              src="assets/careerselfdevelopment.jpg"
+              alt="Error loading the image"
+            />
+            <p class="latest-title">
+              The 2021 Career & Self Development Master Class
+            </p>
+            <p class="latest-old-deals">$2000</p>
+            <p class="latest-deals">$39.99</p>
+          </li>
+        </ul>
       </div>
-      <div class="category-item-latest">
-        <p class="category-item-latest-category">LATEST</p>
-        <p class="category-item-latest-title">I've fallen for the electric Hummer and I hate myself for it</p>
-        <img src="" alt="" class="category-item-latest-image">
-      </div>
-      <ul class="category-item-list">
-        <li>Amazon's electric delivery vans made by Rivian are here, and they're pretty cute
-        </li>
-        <li>This adorable little electric car is made of trash
-        </li>
-        <li>Hyundai's first fuel cell-powered trucks arrive in Switzerland - bye bye, diesel
-        </li>
-        <li>Lynk & Co.'s car sharing-owning scheme will never cost more than €500 a month
-        </li>
-        <li>Lucid unveils the Air, its luxury EV with up to 517-miles of range costing as much as $169K
-        </li>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <ul class="footer-list">
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
       </ul>
-    </div></li>
-    <li>
-      <div class="category-item">
-        <p class="category-item-title">Distract ></p>
-        <div class="category-item-mostpopular">
-          <p class="category-item-mostpopular-category">Most Popular</p>
-          <p class="category-item-mostpopular-title">Games to play on date night: Rule the galaxy together in Stellaris</p>
-          <p class="category-item-mostpopular-author">Tristn Greene</p>
-          <p class="category-item-mostpopular-time">4 weeks ago</p>
-        </div>
-        <div class="category-item-latest">
-          <p class="category-item-latest-category">LATEST</p>
-          <p class="category-item-latest-title">We need to make remote meetings more boring in 2021</p>
-          <img src="" alt="" class="category-item-latest-image">
-        </div>
-        <ul class="category-item-list">
-          <li>The podcasts that got us through 2020
-          </li>
-          <li>How Netflix shapes mainstream culture, explained by data
-          </li>
-          <li>Christmas is better with Tom Vasel's YouTube board game reviews
-          </li>
-          <li>How to start playing tabletop RPGs like D&D and Cyberpunk 2020
-          </li>
-          <li>Watching people pretend to be vampires is what got me through 2020
-          </li>
+      <div class="footer-social-media">
+        <ul>
+          <li>EVENTS</li>
+          <li>ABOUT</li>
+          <li>ADVERTISE</li>
+          <li>JOBS</li>
+          <li>CONTACT</li>
         </ul>
       </div>
-    </li>
-  </ul>
-</div>
-
-<!--Latest deals -->
-<div class="latest-news">
-  <ul>
-    <li>
-      <img src="" alt="">
-      <p class="latest-title">The 2021 All-in-One Data Scientist Mega Bundle</p>
-      <p class="latest-old-deals">$6000</p>
-      <p class="latest-deals">$39.99</p>
-    </li>
-    <li>
-      <img src="" alt="">
-      <p class="latest-title">The Ultimate 2021 White Hat Hacker Certification Bundle</p>
-      <p class="latest-old-deals">$1345</p>
-      <p class="latest-deals">$39.90</p>
-    </li>
-    <li>
-      <img src="" alt="">
-      <p class="latest-title">The Ultimate Logic Pro X Music Production Bundle</p>
-      <p class="latest-old-deals">$690</p>
-      <p class="latest-deals">$29</p>
-    </li>
-    <li>
-      <img src="" alt="">
-      <p class="latest-title">The 2021 Complte Learn Master Photography & Editing Bundle</p>
-      <p class="latest-old-deals">$2985</p>
-      <p class="latest-deals">$39.99</p>
-    </li>
-    <li>
-      <img src="" alt="">
-      <p class="latest-title">The Premium 2021 Project & Quality Management Certification Bundle</p>
-      <p class="latest-old-deals">$4400</p>
-      <p class="latest-deals">$45.99</p>
-    </li>
-    <li>
-      <img src="" alt="">
-      <p class="latest-title">Starchive 1TB Cloud Storage: Lifetime Subscription</p>
-      <p class="latest-old-deals">$1530</p>
-      <p class="latest-deals">$96.99</p>
-    </li>
-    <li>
-      <img src="" alt="">
-      <p class="latest-title">FastestVPN: Lifetime Subscription (10 Devices)</p>
-      <p class="latest-old-deals">$1200</p>
-      <p class="latest-deals">$24.99</p>
-    </li>
-    <li>
-      <img src="" alt="">
-      <p class="latest-title">The 2021 Career & Self Development Master Class</p>
-      <p class="latest-old-deals">$2000</p>
-      <p class="latest-deals">$39.99</p>
-    </li>
-  </ul>
-</div>
-</main>
-<!-- Footer -->
-<footer>
-  <ul class="footer-list">
-    <li><a href=""></a></li>
-    <li><a href=""></a></li>
-    <li><a href=""></a></li>
-    <li><a href=""></a></li>
-    <li><a href=""></a></li>
-    <li><a href=""></a></li>
-    <li><a href=""></a></li>
-  </ul>
-  <div class="footer-social-media">
-    <ul>
-      <li>EVENTS</li>
-      <li>ABOUT</li>
-      <li>ADVERTISE</li>
-      <li>JOBS</li>
-      <li>CONTACT</li>
-    </ul>
-  </div>
-  <div class="footer-bottom">
-    <p class="footer-bottom-p1"><span><img src="" alt=""></span> &copy; 2006-2021 The Next Web B.V.
-    </p>
-    <p class="footer-bottom-p1">Made with &lt;
-    3 in Amsterdam.</p>
-    <p class="footer-bottom-p1">Powered by <span> <img src="" alt=""></span></p>
-  </div>
-</footer>
-</body>
+      <div class="footer-bottom">
+        <p class="footer-bottom-p1">
+          <span
+            ><img src="assets/logofootertnw.png" alt="Error loading the image"
+          /></span>
+          &copy; 2006-2021 The Next Web B.V.
+        </p>
+        <p class="footer-bottom-p1">Made with &lt; 3 in Amsterdam.</p>
+        <p class="footer-bottom-p1">
+          Powered by
+          <span>
+            <img
+              src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/stackpath.svg"
+              alt="Error loading the image"
+          /></span>
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
