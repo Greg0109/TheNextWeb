@@ -131,28 +131,68 @@ main {
   width: 384px;
 }
 
+.latest-news {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.subtitle {
+  font-size: 40px;
+  color: red;
+  font-weight: bolder;
+  margin-bottom: -10px;
+}
+
+.latest-news-article {
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
 .latest-news > ul > li {
-  display: flex;
-}
-
-.latest-title {
-  float: left;
-  width: 80%;
-  margin-left: 15px;
-  margin-right: 10px;
-  font-weight: 40px;
-}
-
-.latest-author, .latest-time {
-  width: 100px;
-  margin-left: 15px;
-  margin-right: 10px;
-  font-weight: 40px;
+  list-style: none
 }
 
 .latest-news > ul > li >img {
+  float: left;
   width:100px;
   height: 100px;
   margin-left: -30px;
-  margin-block-end: 5%;
+  margin-right: 20px;
+}
+
+.latest-news-text > p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#extrainfo, #extrainfo > ul > li {
+  list-style-type: none;
+  color: red; 
+  margin-left: -15px;
+  margin-bottom: 10px;
+}
+
+.latest-funding-bar {
+  list-style-type: none;
+}
+
+.latest-item-info > ul > li {
+  list-style-type: none;
+}
+
+/* latest funding */
+#latest-items > ul > li > img {
+  width: 60px;
+  height: 60px;
+}
+
+.latest-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: -100px;
+}
+
+#latest-items > ul > li {
+  list-style-type: none;
 }
