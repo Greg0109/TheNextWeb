@@ -11,7 +11,7 @@ nav {
   background-color: white;
 }
 
-nav > ul > li {
+nav>ul>li {
   list-style: none;
 }
 
@@ -39,12 +39,12 @@ main {
   padding-top: 50px;
 }
 
-.time > i {
-  color:gray;
+.time>i {
+  color: gray;
 }
 
-.share-icon > i {
- color: gray;
+.share-icon>i {
+  color: gray;
 }
 
 .source {
@@ -85,18 +85,18 @@ main {
   margin-left: 10px;
 }
 
-.time > a {
+.time>a {
   color: grey;
   font-size: lighter;
   text-decoration: none;
 }
 
-.share-icon > a {
+.share-icon>a {
   color: grey;
   font-size: lighter;
 }
 
-.main-articles > ul > li {
+.main-articles>ul>li {
   list-style: none;
 }
 
@@ -107,8 +107,8 @@ main {
 #source1 {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 100)),
     url("assets/Galaxy-hed-368x276.jpg");
-    background-repeat: no-repeat;
-    background-size: 384px 170px;
+  background-repeat: no-repeat;
+  background-size: 384px 170px;
   height: 170px;
   width: 100%;
 }
@@ -116,17 +116,17 @@ main {
 #source2 {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 100)),
     url("assets/Eye-strain-screen-time-hed-368x276.jpg");
-    background-repeat: no-repeat;
-    background-size: 384px 170px;
+  background-repeat: no-repeat;
+  background-size: 384px 170px;
   height: 170px;
   width: 384px;
 }
 
 #source3 {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 100)),
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 100)),
     url("assets/Sleep-hed-796x419.png");
-    background-repeat: no-repeat;
-    background-size: 384px 170px;
+  background-repeat: no-repeat;
+  background-size: 384px 170px;
   height: 170px;
   width: 384px;
 }
@@ -148,26 +148,27 @@ main {
   margin-top: 10px;
 }
 
-.latest-news > ul > li {
+.latest-news>ul>li {
   list-style: none
 }
 
-.latest-news > ul > li >img {
+.latest-news>ul>li>img {
   float: left;
-  width:100px;
+  width: 100px;
   height: 100px;
   margin-left: -30px;
   margin-right: 20px;
 }
 
-.latest-news-text > p {
+.latest-news-text>p {
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
-#extrainfo, #extrainfo > ul > li {
+#extrainfo,
+#extrainfo>ul>li {
   list-style-type: none;
-  color: red; 
+  color: red;
   margin-left: -15px;
   margin-bottom: 10px;
 }
@@ -176,12 +177,12 @@ main {
   list-style-type: none;
 }
 
-.latest-item-info > ul > li {
+.latest-item-info>ul>li {
   list-style-type: none;
 }
 
 /* latest funding */
-#latest-items > ul > li > img {
+#latest-items>ul>li>img {
   width: 60px;
   height: 60px;
 }
@@ -189,10 +190,40 @@ main {
 .latest-item {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-column-gap: -100px;
+  grid-template-rows: 1fr 1fr;
 }
 
-#latest-items > ul > li {
+#latest-items>ul>li {
   list-style-type: none;
+}
+
+.category-item-title {
+  font-size: 40px;
+  color: red;
+  font-weight: bolder;
+}
+
+.category-item-mostpopular {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 100)),
+    url("assets/trumprectangle.jpg");
+  background-repeat: no-repeat;
+  background-size: 360px 270px;
+  height: 270px;
+  width: 100%;
+}
+
+.category-item-mostpopular-category, .category-item-mostpopular-title{
+  color: white;
+}
+
+.category-item-mostpopular-author, .category-item-mostpopular-time {
+  color: gray;
+}
+
+.category-item-mostpopular > p {
+  margin-bottom: 0px;
+}
+
+.category-item-mostpopular-category {
+  padding-top: 125px;
 }
