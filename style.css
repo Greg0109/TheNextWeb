@@ -121,15 +121,39 @@ main {
 }
 
 section {
-  margin-left: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .latest-funding{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-
+  grid-gap: 25px;
+  width: 25%;
+  height: 300px;
 }
+
+.latest-article1 {
+  display: grid;
+  grid-template-rows: 40%;
+  width: 100%;
+}
+
+.latest-article1b {
+  display: flex;
+  flex-direction: column;
+}
+
+.tag {
+  margin-bottom: 15px;
+  list-style: none;
+}
+
+.portfolio {
+  list-style: none;
+}
+
 
 .latest-text {
   color: red;
@@ -146,6 +170,7 @@ section {
 
 .latestarticleprice, .latestarticlebrand {
   margin-left: 200px;
+  padding: ;
 }
 
 .latest-article-title {
@@ -154,7 +179,12 @@ section {
   font-weight: 500;
   position: absolute;
   z-index: 2;
-  margin-left: 200px;
+  margin-left: 50px;
+}
+
+hr {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .latest-article-span {
