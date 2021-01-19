@@ -124,48 +124,68 @@ section {
   margin-left: 20%;
 }
 
-.subtitle {
-  font-size: 40px;
-  color: red;
-  font-weight: bolder;
-  margin-bottom: -10px;
-}
-
-#extrainfo,
-#extrainfo > ul > li {
-  list-style-type: none;
-  color: red;
-  margin-left: -15px;
-  margin-bottom: 10px;
-}
-
-.latest-funding-bar {
-  list-style-type: none;
-}
-
-.latest-item-info > ul > li {
-  list-style-type: none;
-}
-
-/* latest funding */
-#latest-items > ul > li > img {
-  width: 60px;
-  height: 60px;
-}
-
-.latest-item {
+.latest-funding{
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+
 }
 
-#latest-items > ul > li {
-  list-style-type: none;
+.latest-text {
+  color: red;
+  font-size: 25px;
+  margin-top: 55px;
+  font-weight: 600;
 }
 
-/*  */
-/*  */
-/*  */
+.latest-items {
+  color: red;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+.latestarticleprice, .latestarticlebrand {
+  margin-left: 200px;
+}
+
+.latest-article-title {
+  background-color: rgb(223, 54, 54);
+  color: white;
+  font-weight: 500;
+  position: absolute;
+  z-index: 2;
+  margin-left: 200px;
+}
+
+.latest-article-span {
+  color: gray;
+  font-size: 13px;
+}
+
+.latestarticlegrou {
+  background-color: rgb(235, 201, 197);
+} 
+
+.latest-article1 > img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  z-index: 1;
+}
+
+.latest-article2 > img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  z-index: 1;
+}
+
+.latest-article3 > img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  z-index: 1;
+}
 
 #categories-grid {
   display: grid;
