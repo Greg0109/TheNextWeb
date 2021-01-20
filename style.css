@@ -8,7 +8,6 @@ body {
   justify-content: space-between;
   background-color: black;
   padding: -3px 0px;
-
 }
 
 .left-ul,
@@ -57,6 +56,7 @@ a {
   z-index: 50;
   background-color: white;
   border-bottom: 1px solid rgba(128, 128, 128, 0.233);
+  margin-bottom: -35px;
 }
 
 .second-nav-left-ul {
@@ -83,34 +83,85 @@ main {
   position: relative;
   width: 100%;
   height: 450px;
+  margin-bottom: -15px;
 }
 
-.source {
+.source1, .source2, .source3 {
   padding-top: 100px;
   margin-bottom: 0px;
   color: white;
-  font-size: bold;
 }
 
-.main-title {
+.main-title1, .main-title2, .main-title3 {
   margin-top: 0px;
   margin-bottom: 0px;
   color: white;
   font-size: bold;
+}
+
+.source1 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: -75px;
+  margin-left: 15px;
+}
+
+.main-title1 {
+  font-weight: 600;
+  font-size: 50px;
+  margin-left: 15px;
+}
+
+.source2 {
+  font-size: 15px;
+  margin-top: -20px;
+  font-weight: 300;
+  margin-left: 15px;
+}
+
+.main-title2 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.source3 {
+  font-size: 15px;
+  margin-top: -20px;
+  font-weight: 300;
+  margin-left: 15px;
+}
+
+.main-title3 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.date {
+  text-align: end;
+  color: rgb(231, 229, 229);
+  font-weight: 600;
+  font-size: 14px;
 }
 
 .main-author {
   float: left;
-  margin-top: 0px;
+  margin-top: 45px;
   margin-bottom: 0px;
   color: grey;
-  font-size: lighter;
+  font-size: 15px;
+  text-align: center;
+  margin-left: 15px;
+  font-weight: 400;
 }
 
 .subtitle {
   color: red;
   font-weight: 600;
   font-size: 35px;
+  margin-bottom: -90px;
 }
 
 #source1 {
@@ -122,6 +173,15 @@ main {
   height: auto;
   width: 100%;
   position: relative;
+}
+
+.logo {
+  width: 350px;
+  height: 200px;
+  margin-top: -50px;
+  left: 0;
+  padding: 20px;
+  opacity: 0.5em;
 }
 
 #source2 {
@@ -158,6 +218,8 @@ section {
   display: flex;
   justify-content: space-between;
   width: 70%;
+  margin-bottom: -10px;
+  margin-top: -70px;
 }
 
 #latest-title {
@@ -251,13 +313,14 @@ section {
 
 .funding-series {
   margin-top: 0;
-  color: gray;
   font-size: 11px;
+  font-weight: 600;
+  color: gray;
 }
 
 .funding-price {
   font-size: 20px;
-  font-weight: bolder;
+  font-weight: 600;
   margin-bottom: 0;
 }
 
@@ -265,7 +328,7 @@ section {
   display: grid;
   background-color: #fffaf8;
   justify-content: start;
-  align-items: center;
+  margin-left: -35px;
 }
 
 .tag {
@@ -277,6 +340,10 @@ section {
   list-style: none;
 }
 
+.tag-text {
+  color: rgb(88, 84, 84);
+}
+
 .latest-article-title {
   background-color: rgb(223, 54, 54);
   color: white;
@@ -286,10 +353,6 @@ section {
   margin-left: 50px;
 }
 
-hr {
-  margin-left: 10px;
-  margin-right: 10px;
-}
 
 .latest-article-span {
   color: gray;
@@ -433,7 +496,8 @@ hr {
 }
 
 .latest-title {
-  padding: 5px;
+  font-weight: 700;
+  font-size: 19px;
 }
 
 .latest-deals {
