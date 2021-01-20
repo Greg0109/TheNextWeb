@@ -91,9 +91,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-template-areas: 
-          "a a b"
-          "a a c";
+  grid-template-areas: "a a b""a a c";
   gap: 10px;
   width: 100%;
   height: 450px;
@@ -101,10 +99,8 @@ main {
 }
 
 #source1 {
-  grid-area: 
-  a;
-  background: linear-gradient(to bottom, rgba(255, 0, 0, 0.596), rgba(128, 128, 128, 0.342)),
-    url("assets/Galaxy-hed-796x419.jpg");
+  grid-area: a;
+  background: linear-gradient(to bottom, rgba(255, 0, 0, 0.596), rgba(128, 128, 128, 0.342)), url("assets/Galaxy-hed-796x419.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: auto;
@@ -133,8 +129,8 @@ main {
 }
 
 #source2 {
-  background: 
-  linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 100)),
+  background:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 100)),
     url("assets/Eye-strain-screen-time-hed-368x276.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -145,8 +141,8 @@ main {
 }
 
 #source3 {
-  background: 
-  linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 100)),
+  background:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 100)),
     url("assets/Sleep-hed-796x419.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -166,7 +162,7 @@ main {
 .source {
   font-size: 14px;
   font-weight: lighter;
-  font-family: roboto, "sans-serif";
+  font-family: roboto, sans-serif;
   color: white;
   text-align: left;
   margin: 0;
@@ -175,21 +171,21 @@ main {
 #main-title {
   font-size: 56px;
   font-weight: bolder;
-  font-family: roboto, "sans-serif";
+  font-family: roboto, sans-serif;
   color: white;
   text-align: left;
   padding: 0;
-  margin:0;
+  margin: 0;
 }
 
 .main-title-small {
   font-size: 28px;
   font-weight: bolder;
-  font-family: roboto, "sans-serif";
+  font-family: roboto, sans-serif;
   color: white;
   text-align: left;
   padding: 0;
-  margin:0;
+  margin: 0;
 }
 
 .main-author {
@@ -222,6 +218,16 @@ section {
   margin-top: -70px;
 }
 
+.category-item-mostpopular > p {
+  margin-bottom: 0;
+}
+
+.latest-article1 > a > p {
+  font-size: 20px;
+  color: white;
+  font-weight: bolder;
+}
+
 #latest-title {
   color: red;
   font-size: 25px;
@@ -246,7 +252,7 @@ section {
   padding-right: 10px;
 }
 
-#latest-funding-section{
+#latest-funding-section {
   max-width: 100%;
   height: auto;
   display: grid;
@@ -281,7 +287,7 @@ section {
 
 .latest-article1 {
   grid-area: 1/1/2/5;
-  background-color: #ff4422;
+  background-color: #f42;
   display: grid;
   grid-template-columns: repeat(3, 33.3%);
 }
@@ -291,12 +297,6 @@ section {
   color: white;
   grid-area: 2/2/3/4;
   margin-left: 20px;
-}
-
-.latest-article1 > a > p {
-  font-size: 20px;
-  color: white;
-  font-weight: bolder;
 }
 
 .latestarticlepriceandbrand {
@@ -353,7 +353,6 @@ section {
   z-index: 2;
   margin-left: 50px;
 }
-
 
 .latest-article-span {
   color: gray;
@@ -427,10 +426,6 @@ section {
   color: gray;
 }
 
-.category-item-mostpopular > p {
-  margin-bottom: 0px;
-}
-
 .category-item-mostpopular-category {
   padding-top: 125px;
 }
@@ -438,7 +433,7 @@ section {
 .category-item-latest {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  background-color:#ff442214;
+  background-color: #ff442214;
   position: relative;
   height: 89px;
 }
@@ -469,12 +464,12 @@ section {
 }
 
 .category-item-list > li::before {
-  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: red; /* Change the color */
-  font-weight: bold; /* If you want it to be bold */
-  display: inline-block; /* Needed to add space between the bullet and the text */
-  width: 1em; /* Also needed for space (tweak if needed) */
-  margin-left: -1em; /* Also needed for space (tweak if needed) */
+  content: "\2022";
+  color: red;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
 
 .latest-news {
@@ -551,7 +546,7 @@ footer {
   max-width: 50%;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: -150;
+  gap: -150px;
 }
 
 #footer-bottom p {
@@ -568,7 +563,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  
+
   #second-nav {
     grid-template-columns: 100px auto 70px;
     grid-template-rows: 50px;
@@ -601,7 +596,7 @@ footer {
     font-size: 20px;
   }
 
-  #latest-funding-section{
+  #latest-funding-section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -612,7 +607,7 @@ footer {
     visibility: hidden;
     display: none;
   }
-  
+
   .latest-news {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -625,8 +620,8 @@ footer {
     margin-left: 25%;
     max-width: 50%;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto / span 2;
-    gap: -150;
+    grid-template-rows: auto \ span 2px;
+    gap: -150px;
   }
 }
 
@@ -635,12 +630,12 @@ footer {
     visibility: hidden;
     display: none;
   }
-  
+
   #main-articles {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "a" "b" "c";
+    grid-template-areas: "a""b""c";
     gap: 10px;
     position: relative;
     width: 100%;
@@ -653,11 +648,11 @@ footer {
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
-  
+
   #source2 {
-    grid-area: b;  
+    grid-area: b;
   }
-  
+
   #source3 {
     grid-area: 3/1/4/5;
   }
@@ -667,7 +662,7 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  #latest-funding-section{
+  #latest-funding-section {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -680,7 +675,7 @@ footer {
     visibility: hidden;
     display: none;
   }
-  
+
   .latest-news {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -714,6 +709,6 @@ footer {
     margin-left: 25%;
     max-width: 50%;
     grid-template-columns: 1fr;
-    gap: -150;
+    gap: -150px;
   }
 }
