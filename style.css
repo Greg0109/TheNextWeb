@@ -3,6 +3,10 @@ body {
   overflow-x: hidden;
 }
 
+p {
+  font-family: roboto, sans-serif;
+}
+
 .first-nav {
   display: flex;
   justify-content: space-between;
@@ -232,6 +236,7 @@ section {
   color: red;
   font-size: 25px;
   font-weight: 600;
+  font-family: roboto sans-serif;
 }
 
 #latest-funding-categories {
@@ -299,6 +304,12 @@ section {
   margin-left: 20px;
 }
 
+.latest-article-bottom {
+  color: #555;
+  font-size: 12px;
+  font-family: roboto sans-serif;
+}
+
 .latestarticlepriceandbrand {
   width: auto;
   background-color: #ff442214;
@@ -338,11 +349,12 @@ section {
 
 .portfolio {
   list-style: none;
-  border-bottom: 1px black solid;
+  border-bottom: 2px #ff442214 solid;
 }
 
 .tag-text {
-  color: rgb(88, 84, 84);
+  color: #555;
+  font-size: 13px;
 }
 
 .latest-article-title {
@@ -355,8 +367,8 @@ section {
 }
 
 .latest-article-span {
-  color: gray;
-  font-size: 13px;
+  color: #aaa;
+  font-size: 12px;
 }
 
 #categories-grid {
@@ -428,6 +440,8 @@ section {
 
 .category-item-mostpopular-category {
   padding-top: 125px;
+  font-size: 14px;
+  color: white;
 }
 
 .category-item-latest {
@@ -441,11 +455,16 @@ section {
 .category-item-latest-category {
   margin-bottom: 3px;
   margin-left: 20px;
+  color: #f42;
+  font-size: 13px; 
 }
 
 .category-item-latest-title {
   margin-top: 0;
   margin-left: 10px;
+  color: #f42;
+  font-size: 14px; 
+  font-weight: bolder;
 }
 
 .category-item-latest-image {
@@ -499,11 +518,14 @@ section {
 .latest-deals {
   padding: 5px;
   font-size: 00.9rem;
-  color: rgba(128, 128, 128, 0.74);
+  color: #555;
+  font-family: roboto sans-serif;
 }
 
 .cross {
   text-decoration: line-through;
+  color: #aaa;
+
 }
 
 footer {
