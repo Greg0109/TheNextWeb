@@ -581,6 +581,23 @@ footer {
     display: none;
   }
 
+  #source1 {
+    background: url("assets/Galaxy-hed-796x419.jpg");
+  }
+
+  .logo {
+    visibility: hidden;
+    display: none;
+  }
+
+  #main-title {
+    font-size: 40px;
+  }
+
+  .main-title-small {
+    font-size: 20px;
+  }
+
   #latest-funding-section{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
