@@ -620,7 +620,7 @@ footer {
     margin-left: 25%;
     max-width: 50%;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto \ span 2px;
+    grid-template-rows: auto;
     gap: -150px;
   }
 }
