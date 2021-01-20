@@ -236,7 +236,7 @@ section {
   color: red;
   font-size: 25px;
   font-weight: 600;
-  font-family: roboto sans-serif;
+  font-family: roboto, sans-serif;
 }
 
 #latest-funding-categories {
@@ -307,7 +307,7 @@ section {
 .latest-article-bottom {
   color: #555;
   font-size: 12px;
-  font-family: roboto sans-serif;
+  font-family: roboto, sans-serif;
 }
 
 .latestarticlepriceandbrand {
@@ -456,14 +456,14 @@ section {
   margin-bottom: 3px;
   margin-left: 20px;
   color: #f42;
-  font-size: 13px; 
+  font-size: 13px;
 }
 
 .category-item-latest-title {
   margin-top: 0;
   margin-left: 10px;
   color: #f42;
-  font-size: 14px; 
+  font-size: 14px;
   font-weight: bolder;
 }
 
@@ -519,13 +519,12 @@ section {
   padding: 5px;
   font-size: 00.9rem;
   color: #555;
-  font-family: roboto sans-serif;
+  font-family: roboto, sans-serif;
 }
 
 .cross {
   text-decoration: line-through;
   color: #aaa;
-
 }
 
 footer {
