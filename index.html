@@ -13,20 +13,52 @@
 </head>
 
 <body>
-  <!-- header section -->
 
-  <header>
-    <nav>
-      <div class="left-nav">
-        <img id="navlogo" src="assets/tnw.svg" alt="" class="logonavbar" />
-        <a href="#"></a>
-      </div>
-      <ul class="right-nav">
-        <li><i class="fas fa-search"></i></li>
-        <li><i class="fas fa-bars"></i></li>
+  <!-- nav section -->
+
+  <nav class="first-nav">
+    <div id="first-nav-left">
+      <ul class="left-ul">
+        <li><a href="#" class="left-nav-li">News</a></li>
+        <li><a href="#" class="left-nav-li">Events</a></li>
+        <li><a href="#" class="left-nav-li">Business</a></li>
+        <li><a href="#" class="left-nav-li">AMAs</a></li>
+        <li><a href="#" class="left-nav-li">Spaces</a></li>
+        <li><a href="#" class="left-nav-li">Terms & Conditions</a></li>
       </ul>
-    </nav>
-  </header>
+    </div>
+    <div id="first-nav-right">
+      <ul class="right-ul">
+        <li><a href="#" class="right-nav-li">About</a></li>
+        <li><a href="#" class="right-nav-li">Advertise</a></li>
+        <li><a href="#" class="right-nav-li">Jobs</a></li>
+        <li><a href="#" class="right-nav-li">Contact</a></li>
+      </ul>
+    </div>
+
+  </nav>
+
+
+  <div id="second-nav">
+
+    <ul class="second-nav-left-ul">
+      <li><a href="#" class="second-nav-right-li">LATEST</a></li>
+      <li><a href="#" class="second-nav-right-li">HARD WORKING</a></li>
+      <li><a href="#" class="second-nav-right-li">PLUGGED</a></li>
+      <li><a href="#" class="second-nav-right-li">README</a></li>
+      <li><a href="#" class="second-nav-right-li">GROWTH QUARTERS</a></li>
+      <li><a href="#" class="second-nav-right-li">SHIFT</a></li>
+      <li><a href="#" class="second-nav-right-li">NEUTRAL</a></li>
+
+    </ul>
+
+    <div class="search-icon">
+      <i class="fa fa-search fa-lg" aria-hidden="true"></i>
+    </div>
+
+
+
+  </div>
 
   <!-- main section -->
   <main>
@@ -58,7 +90,7 @@
     <!-- Latest news -->
 
     <section>
-      <p class="subtitle">Latest News &gt;</p>
+      <p class="subtitle">Latest news &gt;</p>
       <div class="latest-news">
         <div class="latest-news-article">
           <img src="assets/azure.jpg" alt="Error loading the image" />
@@ -143,91 +175,127 @@
 
     <!-- Latest funding -->
 
-    <section>
-      <p class="latest-text">Latest funding round on Index.co</p>
+    <div>
+      <p class="latest-text">Latest funding round on Index.co &gt;</p>
       <div class="latest-items">
         <p>See more</p>
         <p>Get updates by email</p>
         <p>Add info</p>
       </div>
-      <div class="latest-funding">
-        <div class="latest-item">
-          <div class="latest-article1">
-            <img src="assets/bharatpe.png" alt="Error loading image">
-            <p class="latest-article-title">DeHaat</p>
-            <p class="latestarticleprice">$30M</p>
-            <p class="latestarticlebrand">SERIES C</p>
-          </div>
-          <div class="latest-article1b">
-            <ul>
-            <li class="tag"><i class="fas fa-tag">&nbsp; E-Commerce</i></li>
-            <li class="portfolio"><i class="fas fa-briefcase">&nbsp; AgFunder, +6</i></li>
-          </ul>
-          </div>
-          <hr>
-          <p>Agritech startup DeHaat scores $30 Mn in Series C round <span class="latest-article-span">on
-              Entrackr</span>
-          </p>
-        </div>
 
-        <div class="latest-item">
-          <div class="latest-article1">
-            <img src="assets/techlatests.jpg" alt="Error loading image">
-            <p class="latest-article-title">Jobber</p>
-            <p class="latestarticleprice">$60M</p>
-            <p class="latestarticlebrand">VENTURE CAPITAL</p>
-          </div>
-          <div class="latest-article1b">
-            <ul>
-           <li class="tag"><i class="fas fa-tag">&nbsp; Mobile, +3</i></li>
-            <li class="portfolio"><i class="fas fa-briefcase">&nbsp; OMERS Ventures, +3</i></li>
-           </ul>
-          </div>
-          <hr>
-          <p>Business Management Platform Jbber Raises $60 Million <span class="latest-article-span">on Pulse 2.0</span>
-          </p>
-        </div>
-
-        <div class="latest-item">
-          <div class="latest-article1">
-            <img src="assets/techlatests.jpg" alt="Error loading image">
-            <p class="latest-article-title">Jobber</p>
-            <p class="latestarticleprice">$60M</p>
-            <p class="latestarticlebrand">VENTURE CAPITAL</p>
-          </div>
-          <div class="latest-article1b">
-            <ul>
-            <li class="tag"><i class="fas fa-tag">&nbsp; Mobile, +3</i></li>
-            <li class="portfolio"><i class="fas fa-briefcase">&nbsp; OMERS Ventures, +3</i></li>
-          </ul>
-          </div>
-          <hr>
-          <p>Business Management Platform Jbber Raises $60 Million <span class="latest-article-span">on Pulse 2.0</span>
-          </p>
-        </div>
-
-        <div class="latest-item">
-          <div class="latest-article1">
-            <img src="assets/swimm.png" alt="Error loading image">
-            <p class="latest-article-title">Personio GmbH</p>
-            <div class="latest-article-group">
-              <p class="latestarticleprice">$125M</p>
-              <p class="latestarticlebrand">SERIES C</p>
+      <section id="latest-funding-section">
+        <div class="latest-funding">
+          <div class="latest-item">
+            <div class="latest-article1">
+              <img src="assets/bharatpe.png" alt="Error loading image">
+              <a href="#">
+                <h4>DeHaat</h4>
+              </a>
+            </div>
+            <div class="latestarticlepriceandbrand">
+              <a href="#">
+                <h4>$30M</h4>
+              </a>
+              <p>SERIES C</p>
             </div>
           </div>
           <div class="latest-article1b">
             <ul>
-            <li class="tag"><i class="fas fa-tag">&nbsp; SaaS, +3</i></li>
-            <li class="portfolio"><i class="fas fa-briefcase">&nbsp; Index Ventures, +6</i></li>
-           </ul>
+              <li class="tag"><i class="fas fa-tag">&nbsp; E-Commerce</i></li>
+              <li class="portfolio"><i class="fas fa-briefcase">&nbsp; AgFunder, +6</i></li>
+            </ul>
           </div>
-          <hr>
-          <p>Personio raises $125M at $1.7B vluation for its HR operations platform <span class="latest-article-span">on
-              SiliconANGLE</span>
-          </p>
+          <div class="latest-article-bottom">
+            <hr>
+            <p>Agritech startup DeHaat scores $30 Mn in Series C round <span class="latest-article-span">on
+                Entrackr</span>
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
+
+        <div class="latest-funding">
+          <div class="latest-item">
+            <div class="latest-article1">
+              <img src="assets/techlatests.jpg" alt="Error loading image">
+              <a href="#">
+                <h4>Jobber</h4>
+              </a>
+            </div>
+            <div class="latestarticlepriceandbrand">
+              <a href="#">$60M</a>
+              <p>VENTURE CAPITAL</p>
+            </div>
+          </div>
+          <div class="latest-article1b">
+            <ul>
+              <li class="tag"><i class="fas fa-tag">&nbsp; Mobile, +3</i></li>
+              <li class="portfolio"><i class="fas fa-briefcase">&nbsp; OMERS Ventures, +3</i></li>
+            </ul>
+          </div>
+          <div class="latest-article-bottom">
+            <hr>
+            <p>Business Management Platform Jbber Raises $60 Million <span class="latest-article-span">on Pulse
+                2.0</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="latest-funding">
+          <div class="latest-item">
+            <div class="latest-article1">
+              <img src="assets/techlatests.jpg" alt="Error loading image">
+              <a href="#">
+                <h4>Jobber</h4>
+              </a>
+            </div>
+            <div class="latestarticlepriceandbrand">
+              <a href="#">$60M</a>
+              <p>VENTURE CAPITAL</p>
+            </div>
+          </div>
+          <div class="latest-article1b">
+            <ul>
+              <li class="tag"><i class="fas fa-tag">&nbsp; Mobile, +3</i></li>
+              <li class="portfolio"><i class="fas fa-briefcase">&nbsp; OMERS Ventures, +3</i></li>
+            </ul>
+          </div>
+          <div class="latest-article-bottom">
+            <hr>
+            <p>Business Management Platform Jbber Raises $60 Million <span class="latest-article-span">on Pulse
+                2.0</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="latest-funding">
+          <div class="latest-item">
+            <div class="latest-article1">
+              <img src="assets/swimm.png" alt="Error loading image">
+              <a href="#">
+                <h4>Personio GmbH</h4>
+              </a>
+            </div>
+            <div class="latestarticlepriceandbrand">
+              <a href="#">$125M</a>
+              <p>SERIES C</p>
+            </div>
+          </div>
+          <div class="latest-article1b">
+            <ul>
+              <li class="tag"><i class="fas fa-tag">&nbsp; SaaS, +3</i></li>
+              <li class="portfolio"><i class="fas fa-briefcase">&nbsp; Index Ventures, +6</i></li>
+            </ul>
+          </div>
+          <div class="latest-article-bottom">
+            <hr>
+            <p>Personio raises $125M at $1.7B vluation for its HR operations platform <span
+                class="latest-article-span">on
+                SiliconANGLE</span>
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
 
     <!-- Categoriess -->
 
