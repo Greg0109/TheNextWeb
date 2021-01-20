@@ -336,6 +336,7 @@ section {
 
 .portfolio {
   list-style: none;
+  border-bottom: 1px black solid;
 }
 
 .tag-text {
