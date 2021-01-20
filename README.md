@@ -22,7 +22,7 @@
 
 👤 **Gift**
 
-- GitHub: [@ryelbanfield](https://github.com/Ghiftee)
+- GitHub: [@Gift](https://github.com/Ghiftee)
 
 ## Contributing
 
