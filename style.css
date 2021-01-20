@@ -49,7 +49,7 @@ a {
 
 #second-nav {
   display: grid;
-  grid-template-columns: auto 70px;
+  grid-template-columns: 100px auto 70px;
   grid-template-rows: 50px;
   position: sticky;
   top: 0;
@@ -59,11 +59,22 @@ a {
   margin-bottom: -35px;
 }
 
-.second-nav-left-ul {
-  justify-self: start;
+#nav-logo {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: auto;
+  width: 80px;
+  padding: 20px;
+  background-color: black;
   align-self: center;
-  margin-left: -25px;
+}
+
+.second-nav-left-ul {
   display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
   gap: 12px;
 }
 
@@ -76,96 +87,20 @@ main {
 }
 
 #main-articles {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  grid-template-areas: "a a b"
+  "a a c";
   gap: 10px;
-  position: relative;
   width: 100%;
   height: 450px;
   margin-bottom: -15px;
 }
 
-.source1, .source2, .source3 {
-  padding-top: 100px;
-  margin-bottom: 0px;
-  color: white;
-}
-
-.main-title1, .main-title2, .main-title3 {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  color: white;
-  font-size: bold;
-}
-
-.source1 {
-  font-size: 15px;
-  font-weight: 600;
-  margin-top: -75px;
-  margin-left: 15px;
-}
-
-.main-title1 {
-  font-weight: 600;
-  font-size: 50px;
-  margin-left: 15px;
-}
-
-.source2 {
-  font-size: 15px;
-  margin-top: -20px;
-  font-weight: 300;
-  margin-left: 15px;
-}
-
-.main-title2 {
-  text-align: center;
-  font-weight: 600;
-  font-size: 20px;
-}
-
-.source3 {
-  font-size: 15px;
-  margin-top: -20px;
-  font-weight: 300;
-  margin-left: 15px;
-}
-
-.main-title3 {
-  text-align: center;
-  font-weight: 600;
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.date {
-  text-align: end;
-  color: rgb(231, 229, 229);
-  font-weight: 600;
-  font-size: 14px;
-}
-
-.main-author {
-  float: left;
-  margin-top: 45px;
-  margin-bottom: 0px;
-  color: grey;
-  font-size: 15px;
-  text-align: center;
-  margin-left: 15px;
-  font-weight: 400;
-}
-
-.subtitle {
-  color: red;
-  font-weight: 600;
-  font-size: 35px;
-  margin-bottom: -90px;
-}
-
 #source1 {
-  grid-area: 1/1/3/3;
+  grid-area: a;
   background: linear-gradient(to bottom, rgba(255, 0, 0, 0.596), rgba(128, 128, 128, 0.342)),
     url("assets/Galaxy-hed-796x419.jpg");
   background-repeat: no-repeat;
@@ -176,12 +111,25 @@ main {
 }
 
 .logo {
-  width: 350px;
-  height: 200px;
-  margin-top: -50px;
+  position: absolute;
+  width: 360px;
+  height: 112px;
   left: 0;
+  top: 0;
   padding: 20px;
   opacity: 0.5em;
+}
+
+.date {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  text-align: end;
+  color: rgb(231, 229, 229);
+  font-weight: 600;
+  font-size: 14px;
+  text-align: left;
 }
 
 #source2 {
@@ -191,9 +139,8 @@ main {
   background-size: 100% 100%;
   height: auto;
   width: 100%;
-  grid-area: 1/3/2/4;
+  grid-area: b;
   position: relative;
-
 }
 
 #source3 {
@@ -204,7 +151,58 @@ main {
   height: auto;
   width: 100%;
   position: relative;
-  grid-area: 2/3/4/5;
+  grid-area: c;
+}
+
+.source-small-grid {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 15px;
+}
+
+.source {
+  font-size: 14px;
+  font-weight: lighter;
+  font-family: roboto;
+  color: white;
+  text-align: left;
+  margin: 0;
+}
+
+#main-title {
+  font-size: 56px;
+  font-weight: bolder;
+  font-family: roboto;
+  color: white;
+  text-align: left;
+  padding: 0;
+  margin:0;
+}
+
+.main-title-small {
+  font-size: 28px;
+  font-weight: bolder;
+  font-family: roboto;
+  color: white;
+  text-align: left;
+  padding: 0;
+  margin:0;
+}
+
+.main-author {
+  color: grey;
+  font-size: 12px;
+  text-align: left;
+  font-weight: 400;
+  margin: 0;
+}
+
+.subtitle {
+  color: red;
+  font-weight: 600;
+  font-size: 35px;
+  margin-bottom: -90px;
 }
 
 section {
@@ -567,6 +565,21 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+  
+  #second-nav {
+    grid-template-columns: 100px auto 70px;
+    grid-template-rows: 50px;
+    grid-template-areas: "a b c";
+  }
+
+  .search-icon {
+    grid-area: c;
+  }
+
+  .second-nav-left-ul {
+    visibility: hidden;
+    display: none;
+  }
 
   #latest-funding-section{
     display: grid;
@@ -597,11 +610,17 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 750px) {
+  .first-nav {
+    visibility: hidden;
+    display: none;
+  }
+  
   #main-articles {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "a" "b" "c";
     gap: 10px;
     position: relative;
     width: 100%;
@@ -609,14 +628,14 @@ footer {
   }
 
   #source1 {
-    grid-area: 1/1/2/2;
+    grid-area: a;
     background: url("assets/Galaxy-hed-796x419.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
   
   #source2 {
-    grid-area: 2/1/3/2;  
+    grid-area: b;  
   }
   
   #source3 {
