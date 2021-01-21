@@ -23,6 +23,7 @@
 👤 **Gift**
 
 - GitHub: [@Gift](https://github.com/Ghiftee)
+- Twitter: [@iGhiftee](https://twitter.com/iGhiftee)
 
 ## Contributing
 

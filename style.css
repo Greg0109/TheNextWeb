@@ -534,8 +534,8 @@ footer {
 }
 
 .footer-top {
-  background-color: #131313;
   padding-bottom: 20px;
+  background-color: #131313;
 }
 
 .footer-social-media {
@@ -569,11 +569,6 @@ footer {
   margin-left: 10px;
 }
 
-.footer-top {
-  padding-bottom: 20px;
-  background-color: #131313;
-}
-
 .footer-bottom {
   text-align: center;
   height: 50px;
@@ -589,7 +584,7 @@ footer {
   color: #aaa;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1020px) {
   #categories-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -608,6 +603,18 @@ footer {
   .second-nav-left-ul {
     visibility: hidden;
     display: none;
+  }
+
+  .logo {
+    visibility: hidden;
+    display: none;
+  }
+
+  #source1 {
+    grid-area: a;
+    background: url("assets/Galaxy-hed-796x419.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
   }
 
   #main-title {
@@ -703,7 +710,7 @@ footer {
     display: block;
     margin-left: -5px;
   }
-  
+
   #latest-funding-categories > p {
     font-size: 9px;
   }
@@ -727,7 +734,7 @@ footer {
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr;
     margin-top: 0;
-    margin-left:-20px;
+    margin-left: -20px;
     gap: 5px;
     padding-top: 50px;
   }
