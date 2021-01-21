@@ -1,0 +1,5 @@
+package-lock.json
+package.json
+node_modules/
+Linters.py
+.DS_Store
